@@ -1,0 +1,66 @@
+aid: sevenrooms
+name: SevenRooms
+description: >-
+  SevenRooms is a guest experience, reservations, and retention platform for
+  the hospitality industry, helping restaurants, hotels, nightlife, and
+  entertainment venues manage reservations, waitlists, CRM, and marketing.
+  Founded in 2011 and serving clients in more than 1,000 cities worldwide, the
+  platform unifies a restaurant tech stack with 100-plus integrations across
+  POS, payments, booking channels, delivery, and marketing tools, plus a
+  flexible RESTful API. The API exposes reservation, guest profile, and
+  feedback data and supports searching availability and creating bookings.
+  Access to the partner-facing developer documentation is gated to approved
+  venue operators and integration partners via individually provisioned
+  accounts.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Restaurant
+  - Reservations
+  - Waitlist
+  - CRM
+  - Marketing
+  - Hospitality
+  - Guest Experience
+url: https://raw.githubusercontent.com/api-evangelist/sevenrooms/refs/heads/main/apis.yml
+created: '2026-06-02'
+modified: '2026-06-02'
+specificationVersion: '0.19'
+apis:
+  - aid: sevenrooms:rest-api
+    name: SevenRooms API
+    description: >-
+      The SevenRooms API is a RESTful interface for hospitality data and
+      operations. It exposes reservations, guest profiles, and feedback scores,
+      and supports retrieving venue info, searching shift-level availability,
+      and creating, modifying, or cancelling reservations including party size,
+      table assignment, booking channel, and tags. Access to the documentation
+      is gated to approved venue operators and integration partners through
+      individually provisioned accounts.
+    humanURL: https://api-docs.sevenrooms.com/
+    tags:
+      - Reservations
+      - Availability
+      - Guest Profiles
+      - Feedback
+    properties:
+      - type: Documentation
+        url: https://api-docs.sevenrooms.com/
+common:
+  - type: Website
+    url: https://sevenrooms.com/
+  - type: Documentation
+    url: https://api-docs.sevenrooms.com/
+  - type: APIReference
+    url: https://sevenrooms.com/platform/integrations-apis/
+  - type: Login
+    url: https://www.sevenrooms.com/login
+  - type: Support
+    url: https://api-docs.sevenrooms.com/
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/sevenrooms
+  - type: X
+    url: https://x.com/sevenrooms
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
