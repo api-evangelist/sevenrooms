@@ -11,7 +11,8 @@ description: >-
   feedback data and supports searching availability and creating bookings.
   Access to the partner-facing developer documentation is gated to approved
   venue operators and integration partners via individually provisioned
-  accounts.
+  accounts (as of February 26, SevenRooms moved to individually provisioned
+  documentation accounts).
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
@@ -24,7 +25,7 @@ tags:
   - Guest Experience
 url: https://raw.githubusercontent.com/api-evangelist/sevenrooms/refs/heads/main/apis.yml
 created: '2026-06-02'
-modified: '2026-06-02'
+modified: '2026-06-03'
 specificationVersion: '0.19'
 apis:
   - aid: sevenrooms:rest-api
@@ -34,9 +35,10 @@ apis:
       operations. It exposes reservations, guest profiles, and feedback scores,
       and supports retrieving venue info, searching shift-level availability,
       and creating, modifying, or cancelling reservations including party size,
-      table assignment, booking channel, and tags. Access to the documentation
-      is gated to approved venue operators and integration partners through
-      individually provisioned accounts.
+      table assignment, booking channel, and tags. Authentication uses OAuth2
+      with a provisioned client_id and client_secret scoped to a venue group.
+      Access to the documentation is gated to approved venue operators and
+      integration partners through individually provisioned accounts.
     humanURL: https://api-docs.sevenrooms.com/
     tags:
       - Reservations
@@ -46,6 +48,11 @@ apis:
     properties:
       - type: Documentation
         url: https://api-docs.sevenrooms.com/
+      - type: APIReference
+        url: https://api-docs.sevenrooms.com/
+      - type: Authentication
+        url: https://api-docs.sevenrooms.com/
+        title: OAuth2 (client_id / client_secret)
 common:
   - type: Website
     url: https://sevenrooms.com/
@@ -53,14 +60,102 @@ common:
     url: https://api-docs.sevenrooms.com/
   - type: APIReference
     url: https://sevenrooms.com/platform/integrations-apis/
+  - type: SignUp
+    url: https://sevenrooms.com/lets-talk/
+    title: Partnerships / API Access Request
   - type: Login
     url: https://www.sevenrooms.com/login
   - type: Support
     url: https://api-docs.sevenrooms.com/
+    title: API Integration Support (api-integration-support@sevenrooms.com)
+  - type: GitHubOrganization
+    url: https://github.com/sevenrooms
+  - type: Pricing
+    url: https://sevenrooms.com/request-a-demo/
+    title: Quote-Based (Request a Demo)
+  - type: Plans
+    url: plans/sevenrooms-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/sevenrooms-rate-limits.yml
+  - type: FinOps
+    url: finops/sevenrooms-finops.yml
+  - type: TermsOfService
+    url: https://sevenrooms.com/terms-of-service/
+  - type: PrivacyPolicy
+    url: https://sevenrooms.com/privacy-policy/
+  - type: Compliance
+    url: https://sevenrooms.com/dpa/
+    title: Data Processing Addendum
   - type: LinkedIn
     url: https://www.linkedin.com/company/sevenrooms
   - type: X
     url: https://x.com/sevenrooms
+  - type: Features
+    data:
+      - name: Reservations & Waitlist
+        description: >-
+          Real-time availability, online and in-house bookings, and waitlist
+          management across shifts and seating areas.
+      - name: CRM & Guest Profiles
+        description: >-
+          Automatic guest profile building that centralizes preferences, visit
+          history, spend, and tags for personalized service.
+      - name: Table & Floor Management
+        description: Seating optimization and floor-plan control for venue operations.
+      - name: Email & SMS Marketing
+        description: >-
+          Automated, multi-channel marketing campaigns driven by guest profile
+          and behavioral data.
+      - name: Loyalty & Perks
+        description: Guest retention, rewards, and perks programs.
+      - name: Event & Private Dining Management
+        description: Booking and management of private dining and special events.
+      - name: Reputation Management
+        description: Review monitoring and response across feedback channels.
+      - name: Voice AI
+        description: AI-powered phone reservation automation and phone-to-booking conversion.
+      - name: Online Ordering
+        description: Direct-to-consumer online ordering platform.
+      - name: Reporting & Analytics
+        description: Business intelligence dashboards for venue performance.
+  - type: UseCases
+    data:
+      - name: Unify the Restaurant Tech Stack
+        description: >-
+          Consolidate reservations, CRM, marketing, and operations across
+          100-plus integrations into a single hospitality platform.
+      - name: Multi-Channel Reservation Distribution
+        description: >-
+          Accept and synchronize bookings across discovery and booking channels
+          such as Google, TheFork, and TripAdvisor.
+      - name: Programmatic Availability & Booking
+        description: >-
+          Retrieve venue info, search shift-level availability, and create,
+          modify, or cancel reservations via the RESTful API.
+      - name: Guest Data Capture & Personalization
+        description: >-
+          Build unified guest profiles from reservations, POS, payments, and
+          WiFi capture to drive personalized marketing and service.
+  - type: Integrations
+    data:
+      - name: POS Systems
+        description: >-
+          35-plus point-of-sale integrations including Square, Toast,
+          Lightspeed, MICROS Simphony, NCR Aloha, Revel, and SpotOn.
+      - name: Payments
+        description: Stripe, Adyen, CyberSource, FreedomPay, and Network International.
+      - name: Booking Channels
+        description: >-
+          Google, Facebook, Instagram, TheFork, TripAdvisor, Reserveout, Chope,
+          and OpenRice.
+      - name: Delivery & Pickup
+        description: DoorDash Drive, Olo, Deliverect, ItsaCheckmate, Drive Yello, and Orkestro.
+      - name: SMS & Voice
+        description: Twilio, SMSGlobal, Bookline, Slang, Amazon Alexa, and VoiceMpower.
+      - name: Marketing & CRM
+        description: Mailchimp, Emma, and Widewail.
+      - name: Hotel & Events
+        description: Revinate, Journey, Tripleseat, and iVvy.
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

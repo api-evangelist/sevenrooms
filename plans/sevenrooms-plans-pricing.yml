@@ -1,0 +1,73 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: SevenRooms
+providerId: sevenrooms
+created: '2026-06-03'
+modified: '2026-06-03'
+reconciled: false
+tags:
+  - Hospitality
+  - Reservations
+  - CRM
+  - Marketing
+  - Subscription
+description: >-
+  SevenRooms prices its hospitality guest-experience platform as a
+  quote-based, tiered SaaS subscription. There is no public self-service
+  price list; published packages are described in marketing terms as flexible
+  bundles for operators of all sizes, with Reservation/Waitlist Management,
+  CRM, Venue Management, and Marketing included in each package. Pricing is
+  obtained by requesting a demo and is negotiated per venue group, so exact
+  per-seat and per-venue figures are not published. The platform API itself is
+  provisioned to approved venue operators and integration partners rather than
+  sold as a standalone metered product.
+sources:
+  - https://sevenrooms.com/request-a-demo/
+  - https://sevenrooms.com/platform/integrations-apis/
+  - https://www.g2.com/products/sevenrooms/pricing
+plans:
+  - id: sevenrooms-core-subscription
+    name: SevenRooms Subscription (Quote-Based)
+    type: subscription
+    description: >-
+      Tiered SaaS subscription bundling reservations, CRM, venue management,
+      and marketing; priced per venue group via a sales quote.
+    entries:
+      - label: Platform subscription
+        name: platform_subscription
+        type: subscription
+        metric: month
+        limit: -1
+        timeFrame: month
+        geo: global
+        unit: '1'
+        price: 'custom — see https://sevenrooms.com/request-a-demo/'
+        userMultiplied: false
+    elements:
+      - name: Reservations & Waitlist Management
+      - name: CRM & Guest Profiles
+      - name: Venue & Table Management
+      - name: Email & SMS Marketing
+  - id: sevenrooms-api-access
+    name: API & Integration Access
+    type: enterprise
+    description: >-
+      Partner-facing RESTful API access provisioned to approved venue
+      operators and integration partners; included with the platform
+      subscription rather than sold as a separate metered tier.
+    entries:
+      - label: API access (provisioned)
+        name: api_access
+        type: flat
+        metric: month
+        limit: -1
+        timeFrame: month
+        geo: global
+        unit: '1'
+        price: 'included with subscription — provisioned via partnerships'
+        userMultiplied: false
+    elements:
+      - name: Reservation Search & Booking API
+      - name: Guest Profile Data
+      - name: Feedback Scores

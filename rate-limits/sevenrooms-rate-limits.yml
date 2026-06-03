@@ -1,0 +1,56 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: SevenRooms
+providerId: sevenrooms
+created: '2026-06-03'
+modified: '2026-06-03'
+reconciled: false
+tags:
+  - Rate Limiting
+  - Hospitality
+  - Reservations
+description: >-
+  SevenRooms exposes a RESTful API to approved venue operators and integration
+  partners, authenticated via an OAuth2 client_id/client_secret scoped to a
+  venue group. As of February 26, the API documentation moved to individually
+  provisioned accounts, so the specific request-rate, concurrency, and quota
+  numbers are published only inside the gated developer documentation at
+  api-docs.sevenrooms.com and are not publicly reconcilable. Limits are
+  understood to be scoped per provisioned client/venue group. The values below
+  are placeholders pending access to the gated documentation.
+sources:
+  - https://api-docs.sevenrooms.com/
+  - https://sevenrooms.com/platform/integrations-apis/
+responseCodes:
+  throttled: 429
+limits:
+  - name: Per-client API requests
+    scope: key
+    metric: varies
+    limit: 'see gated documentation at https://api-docs.sevenrooms.com/'
+    notes: >-
+      Specific request-rate limits are published only in the provisioned,
+      account-gated API documentation and could not be independently verified.
+  - name: Reservation hold lifetime
+    scope: account
+    metric: varies
+    limit: 'hold expires after 300 seconds (5 minutes)'
+    notes: >-
+      A reservation hold obtained before booking expires after 300 seconds;
+      create_reservation must be called within that window. This is a documented
+      time-window behavior rather than a request-rate limit.
+policies:
+  - name: Provisioned access
+    description: >-
+      API access is granted per integration partner / venue operator via an
+      individually provisioned account; rate limits are bound to the issued
+      OAuth2 client credentials.
+  - name: Time-boxed reservation holds
+    description: >-
+      Booking flows must respect the 5-minute reservation hold window;
+      expired holds must be re-acquired before creating a reservation.
+  - name: Backoff on throttling
+    description: >-
+      Consumers should retry with exponential backoff on 429 responses; exact
+      retry headers are documented in the gated reference.

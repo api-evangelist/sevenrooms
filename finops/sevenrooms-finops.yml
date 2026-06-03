@@ -1,0 +1,81 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: SevenRooms
+providerId: sevenrooms
+created: '2026-06-03'
+modified: '2026-06-03'
+reconciled: false
+tags:
+  - FinOps
+  - FOCUS
+  - Hospitality
+  - Subscription
+description: >-
+  FOCUS-aligned FinOps for SevenRooms: a quote-based, tiered SaaS subscription
+  for hospitality guest experience, billed per venue group rather than by
+  metered API consumption.
+sources:
+  - https://sevenrooms.com/request-a-demo/
+  - https://sevenrooms.com/platform/integrations-apis/
+  - https://sevenrooms.com/msa/
+alignedWith:
+  framework: FinOps Foundation Framework
+  frameworkUrl: https://www.finops.org/framework/
+  dataSpec: FOCUS
+  dataSpecVersion: '1.3'
+  dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
+publisherName: SevenRooms, Inc.
+serviceCategory: Hospitality Guest Experience Software
+billingModel:
+  pricingCategory: Tiered Subscription
+  billingFrequency: Annual
+  billingCurrency: USD
+  chargeCategories:
+    - Purchase
+    - Tax
+focusColumns:
+  ServiceName: SevenRooms
+  ServiceCategory: Hospitality Guest Experience Software
+  ProviderName: SevenRooms
+  PublisherName: SevenRooms, Inc.
+  InvoiceIssuerName: SevenRooms, Inc.
+  BillingCurrency: USD
+  ChargeCategory: Purchase
+meters:
+  - name: platform_subscription
+    unit: month
+    aggregation: sum
+    dimensions:
+      - venue_group
+      - package_tier
+  - name: venue_seats
+    unit: seat
+    aggregation: max
+    dimensions:
+      - venue
+  - name: api_access
+    unit: varies
+    aggregation: count
+    dimensions:
+      - venue_group
+principles:
+  - name: Visibility
+    description: >-
+      Subscription and venue-level usage are reviewed through the SevenRooms
+      account team and platform reporting/analytics dashboards; there is no
+      public metered billing API.
+  - name: Allocation
+    description: >-
+      Costs are attributed by venue group and venue within the contract; tag
+      spend to brands or locations using the venue hierarchy.
+  - name: Optimization
+    description: >-
+      Optimize by right-sizing the package tier and active venue count at
+      renewal and consolidating point solutions into the platform's 100-plus
+      integrations rather than paying for overlapping tools.
+  - name: Accountability
+    description: >-
+      The contracting operator owns the subscription commitment; renewal and
+      tier changes are negotiated with the SevenRooms account team under the
+      Main Services Agreement.
