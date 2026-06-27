@@ -60,7 +60,7 @@ common:
     url: https://api-docs.sevenrooms.com/
   - type: APIReference
     url: https://sevenrooms.com/platform/integrations-apis/
-  - type: SignUp
+  - type: Signup
     url: https://sevenrooms.com/lets-talk/
     title: Partnerships / API Access Request
   - type: Login
