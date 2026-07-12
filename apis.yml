@@ -54,6 +54,10 @@ apis:
         url: https://api-docs.sevenrooms.com/
         title: OAuth2 (client_id / client_secret)
 common:
+  - type: TrustCenter
+    url: security/sevenrooms-trust-center.yml
+  - type: DomainSecurity
+    url: security/sevenrooms-domain-security.yml
   - type: Website
     url: https://sevenrooms.com/
   - type: Documentation
@@ -68,6 +72,8 @@ common:
   - type: Support
     url: https://api-docs.sevenrooms.com/
     title: API Integration Support (api-integration-support@sevenrooms.com)
+  - url: https://sevenrooms.com/blog/
+    type: Blog
   - type: GitHubOrganization
     url: https://github.com/sevenrooms
   - type: Pricing
