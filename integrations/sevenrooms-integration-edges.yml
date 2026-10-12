@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/sevenrooms/integrations
+- https://n8n.io/integrations/sevenrooms/
+- https://composio.dev/toolkits/sevenrooms
+- https://monid.ai/tools/sevenrooms
+checked:
+- https://composio.dev/toolkits/sevenrooms
+- https://monid.ai/tools/sevenrooms
+- https://n8n.io/integrations/sevenrooms/
+- https://zapier.com/apps/sevenrooms/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
