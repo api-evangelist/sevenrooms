@@ -10,10 +10,27 @@ checked:
 - https://monid.ai/tools/sevenrooms
 - https://n8n.io/integrations/sevenrooms/
 - https://zapier.com/apps/sevenrooms/integrations
+- mews-com/integrations/mews-com-integration-edges.yml
 - toast/integrations/toast-integration-edges.yml
 summary: null
 marketplace_apps: []
 edges:
+- partner_name: Mews (own)
+  partner: mews-com
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.mews.com/en/products/marketplace/sevenrooms-vms
+  mirror_of: mews-com/integrations/mews-com-integration-edges.yml
+  apps:
+  - SevenRooms VMS
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
 - partner_name: Toast (own)
   partner: toast
   partner_match: mirror
