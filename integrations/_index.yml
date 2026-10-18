@@ -56,5 +56,5 @@
     quality:
     - unknown
     builder: 'community (Meltano Hub variant maintainers: hugo4400, uptilab2)'
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
