@@ -1,4 +1,4 @@
-# SevenRooms (sevenrooms)
+# SevenRooms
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,109 +66,109 @@
 
 SevenRooms is a guest experience, reservations, and retention platform for the hospitality industry, helping restaurants, hotels, nightlife, and entertainment venues manage reservations, waitlists, CRM, and marketing. Founded in 2011 and serving clients in more than 1,000 cities worldwide, the platform unifies a restaurant tech stack with 100-plus integrations across POS, payments, booking channels, delivery, and marketing tools, plus a flexible RESTful API. The API exposes reservation, guest profile, and feedback data and supports searching availability and creating bookings. Access to the partner-facing developer documentation is gated to approved venue operators and integration partners via individually provisioned accounts (as of February 26, SevenRooms moved to individually provisioned documentation accounts).
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/sevenrooms/refs/heads/main/apis.yml)
+**Areas:** Restaurant · Reservations · Waitlist · CRM · Marketing · Hospitality · Guest Experience
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## SevenRooms on APIs.io
 
-## Tags:
+Everything profiled for SevenRooms is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/sevenrooms/](https://apis.io/providers/sevenrooms/)** — or go straight to one of the APIs or properties below.
 
- - Restaurant, Reservations, Waitlist, CRM, Marketing, Hospitality, Guest Experience
+### APIs (1)
 
-## Timestamps
+- [SevenRooms API](https://apis.io/apis/sevenrooms/rest-api/) — The SevenRooms API is a RESTful interface for hospitality data and operations. It exposes reservations, guest profiles, and feedback scores, and supports…
 
-- **Created:** 2026-06-02
-- **Modified:** 2026-06-03
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### SevenRooms API
-The SevenRooms API is a RESTful interface for hospitality data and operations. It exposes reservations, guest profiles, and feedback scores, and supports retrieving venue info, searching shift-level availability, and creating, modifying, or cancelling reservations including party size, table assignment, booking channel, and tags. Authentication uses OAuth2 with a provisioned client_id and client_secret scoped to a venue group. Access to the documentation is gated to approved venue operators and integration partners through individually provisioned accounts.
+#### Security (2)
 
-**Human URL:** [https://api-docs.sevenrooms.com/](https://api-docs.sevenrooms.com/)
+Authentication, trust centre, and vulnerability disclosure.
 
-#### Tags:
+- [Sevenrooms Domain Security](https://apis.io/security/sevenrooms/sevenrooms-domain-security/)
+- [Sevenrooms Trust Center](https://apis.io/security/sevenrooms/sevenrooms-trust-center/)
 
- - Reservations, Availability, Guest Profiles, Feedback
+#### Plans and pricing (1)
 
-#### Properties
+Published plans, tiers and prices.
 
-- [Documentation](https://api-docs.sevenrooms.com/)
-- [APIReference](https://api-docs.sevenrooms.com/)
-- [Authentication](https://api-docs.sevenrooms.com/) — OAuth2 (client_id / client_secret)
+- [Sevenrooms Plans Pricing](https://apis.io/plans/sevenrooms/sevenrooms-plans-pricing/)
 
-## Common Properties
+#### Rate limits (1)
+
+Published request limits.
+
+- [Sevenrooms Rate Limits](https://apis.io/rate-limits/sevenrooms/sevenrooms-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Sevenrooms Finops](https://apis.io/finops/sevenrooms/sevenrooms-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://sevenrooms.com/)
 - [Documentation](https://api-docs.sevenrooms.com/)
-- [APIReference](https://sevenrooms.com/platform/integrations-apis/)
-- [SignUp](https://sevenrooms.com/lets-talk/) — Partnerships / API Access Request
-- [Login](https://www.sevenrooms.com/login)
-- [Support](https://api-docs.sevenrooms.com/) — API Integration Support (api-integration-support@sevenrooms.com)
-- [GitHubOrganization](https://github.com/sevenrooms)
-- [Pricing](https://sevenrooms.com/request-a-demo/) — Quote-Based (Request a Demo)
-- [Plans](plans/sevenrooms-plans-pricing.yml)
-- [RateLimits](rate-limits/sevenrooms-rate-limits.yml)
-- [FinOps](finops/sevenrooms-finops.yml)
-- [TermsOfService](https://sevenrooms.com/terms-of-service/)
-- [PrivacyPolicy](https://sevenrooms.com/privacy-policy/)
-- [Compliance](https://sevenrooms.com/dpa/) — Data Processing Addendum
-- [LinkedIn](https://www.linkedin.com/company/sevenrooms)
-- [X](https://x.com/sevenrooms)
+- [API reference](https://sevenrooms.com/platform/integrations-apis/)
+- [Pricing](https://sevenrooms.com/request-a-demo/)
+- [Support](https://api-docs.sevenrooms.com/)
+- [Blog](https://sevenrooms.com/blog/)
+- [Compliance](https://sevenrooms.com/dpa/)
+- [Terms of service](https://sevenrooms.com/terms-of-service/)
+- [Privacy policy](https://sevenrooms.com/privacy-policy/)
+- [GitHub](https://github.com/sevenrooms)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| Reservations & Waitlist | Real-time availability, online and in-house bookings, and waitlist management across shifts and seating areas. |
-| CRM & Guest Profiles | Automatic guest profile building that centralizes preferences, visit history, spend, and tags for personalized service. |
-| Table & Floor Management | Seating optimization and floor-plan control for venue operations. |
-| Email & SMS Marketing | Automated, multi-channel marketing campaigns driven by guest profile and behavioral data. |
-| Loyalty & Perks | Guest retention, rewards, and perks programs. |
-| Event & Private Dining Management | Booking and management of private dining and special events. |
-| Reputation Management | Review monitoring and response across feedback channels. |
-| Voice AI | AI-powered phone reservation automation and phone-to-booking conversion. |
-| Online Ordering | Direct-to-consumer online ordering platform. |
-| Reporting & Analytics | Business intelligence dashboards for venue performance. |
+**Kin Score 27.1** — thin · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 35.7 |
+| Access clarity | 59.2 |
 
-| Name | Description |
-|------|-------------|
-| Unify the Restaurant Tech Stack | Consolidate reservations, CRM, marketing, and operations across 100-plus integrations into a single hospitality platform. |
-| Multi-Channel Reservation Distribution | Accept and synchronize bookings across discovery and booking channels such as Google, TheFork, and TripAdvisor. |
-| Programmatic Availability & Booking | Retrieve venue info, search shift-level availability, and create, modify, or cancel reservations via the RESTful API. |
-| Guest Data Capture & Personalization | Build unified guest profiles from reservations, POS, payments, and WiFi capture to drive personalized marketing and service. |
+**Agent readiness 3.1** — human-only
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| POS Systems | 35-plus point-of-sale integrations including Square, Toast, Lightspeed, MICROS Simphony, NCR Aloha, Revel, and SpotOn. |
-| Payments | Stripe, Adyen, CyberSource, FreedomPay, and Network International. |
-| Booking Channels | Google, Facebook, Instagram, TheFork, TripAdvisor, Reserveout, Chope, and OpenRice. |
-| Delivery & Pickup | DoorDash Drive, Olo, Deliverect, ItsaCheckmate, Drive Yello, and Orkestro. |
-| SMS & Voice | Twilio, SMSGlobal, Bookline, Slang, Amazon Alexa, and VoiceMpower. |
-| Marketing & CRM | Mailchimp, Emma, and Widewail. |
-| Hotel & Events | Revinate, Journey, Tripleseat, and iVvy. |
+**Regulatory alignment 24.5** — Horizontal (data, software, accessibility, platform)
 
-## Artifacts
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/sevenrooms/](https://apis.io/providers/sevenrooms/).
 
-Machine-readable API specifications organized by format.
+## How this profile is made
 
-### Plans
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-- [SevenRooms Plans & Pricing](plans/sevenrooms-plans-pricing.yml)
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for SevenRooms: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-### Rate Limits
+## Open an issue
 
-- [SevenRooms Rate Limits](rate-limits/sevenrooms-rate-limits.yml)
-
-### FinOps
-
-- [SevenRooms FinOps](finops/sevenrooms-finops.yml)
-
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/sevenrooms/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
